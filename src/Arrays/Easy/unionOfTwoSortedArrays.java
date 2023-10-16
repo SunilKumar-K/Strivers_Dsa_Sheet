@@ -1,4 +1,7 @@
+
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class unionOfTwoSortedArrays {
@@ -21,6 +24,22 @@ public class unionOfTwoSortedArrays {
 
 public static int[] unionOfTwoSortedArrays(int arr[], int ar[])
 {
+    int nums[] = new int[arr.length+ar.length];
+    int j,k =0;
+    int len = arr.length>ar.length ? arr.length, ar.length;
+    for(int i=0;i<nums.length;i++)
+    {
+        if(arr[j] < ar[k])
+        {
+            nums[i] = arr[j++];
+        }
+        else{
+            nums[i] = ar[k++];
+        }
+    }
+    {
+
+    }
     
 }
 }
