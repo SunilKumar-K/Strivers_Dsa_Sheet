@@ -37,9 +37,6 @@ public static int[] unionOfTwoSortedArrays(int arr[], int ar[])
             nums[i] = ar[k++];
         }
     }
-    {
-
-    }
-    
+    return nums;
 }
 }
